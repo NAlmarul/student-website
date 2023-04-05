@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Calculate Student result</title>
+   <link rel="stylesheet" type="text/css" href="theStyle.css">
+
+</head>
+
+<body>
+   <div class="box">
+      <h3>Calculate Student result</h3>
+
+      <!-- Write the form code here -->
+      <form method = "post" action = "calculateResults.php">
+
+         <table>
+            <tr>
+            <td><label class = "label2">Student Name:</label></td>
+            <td><input style = "margin-bottom: -9px" type = "text" name = "StName"></td>
+           </tr>
+
+           <tr>
+            <td><label class = "label2">Subject Name:</label></td>
+            <td><input style = "margin-bottom: -9px" type = "text" name = "SuName"></td>
+           </tr>
+
+           <tr>
+            <td><label class = "label2">Student grade:</label></td>
+            <td><input style = "margin-bottom: -9px" class = "input1" type = "number" min = "0" max = "100" name = "SGrade"></td>
+           </tr>
+
+           <tr>
+            <td><label class = "label2">Passing grade:</label></td>
+            <td><input style = "margin-bottom: -9px" class = "input1" type = "number" min = "40" max = "100" name = "PGrade"></td>
+           </tr>
+
+
+           <!--
+         <div>
+            <label>Subject Name:</label><input type = "text" name = "SuName">
+         </div>
+
+         <div>
+            <label>Student grade:</label> <input class = "input1" type = "number" min = "0" max = "100" name = "SGrade">
+         </div>
+
+         <div>
+            <label>Passing grade:</label><input class = "input1" type = "number" min = "40" max = "100" name = "PGrade">
+         </div>
+
+            <label class = "label2">Student Name:</label>
+            <input type = "text" name = "StName">
+
+               <label class = "label2">Subject Name:</label>
+               <input type = "text" name = "SuName">
+          
+            <label class = "label2">Student grade:</label>
+            <input class = "input1" type = "number" min = "0" max = "100" name = "SGrade">
+
+         <label class = "label2">Passing grade:</label>
+         <input class = "input1" type = "number" min = "40" max = "100" name = "PGrade">
+
+
+         <table>
+            <tr>
+            <td><label class = "label2">Student Name:</label></td>
+            <td><input type = "text" name = "StName"></td>
+           </tr>
+
+           <tr>
+            <td><label class = "label2">Subject Name:</label></td>
+            <td><input type = "text" name = "SuName"></td>
+           </tr>
+
+           <tr>
+            <td><label class = "label2">Student grade:</label></td>
+            <td><input class = "input1" type = "number" min = "0" max = "100" name = "SGrade"></td>
+           </tr>
+
+           <tr>
+            <td><label class = "label2">Passing grade:</label></td>
+            <td><input class = "input1" type = "number" min = "40" max = "100" name = "PGrade"></td>
+           </tr>
+
+           </table>
+
+
+
+         -->
+
+      </table>
+
+         <p><input type = "submit" class = "btn" value = "submit"></p>
+      </form>
+      
+   </div>
+</body>
+
+</html>

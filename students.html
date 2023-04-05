@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Student </title>
+   <link rel="stylesheet" type="text/css" href="theStyle.css">
+   
+</head>
+
+<body>
+
+
+   <div class="box">
+
+<!--create the table here -->
+  <table id = "table" class = "table1">
+     <caption><p>Student List</p></caption>
+
+     <tr>
+        <th>Student Name</th>
+        <th>Arabic</th>
+        <th>English</th>
+        <th>Math</th>
+     </tr>
+  </table>
+
+   </div>
+
+</body>
+
+</html>
+
+<!-- Write the JavaScript code here  -->
+
+<script>
+
+   var requestData = new XMLHttpRequest();
+   requestData.open('GET', 'results.json');
+   requestData.onload = function(){
+      var data = JSON.parse(requestData.responseText);
+      editHTML(data);
+   }
+
+   requestData.send();
+
+   function editHTML(dArray){
+
+      var tab = document.getElementById("table");
+      tab.innerHTML += "<tr>";
+      for(var i = 0; i < dArray.length; i++){
+
+         tab.innerHTML += "<td>" + dArray[i].stName + "</td>"
+         + "<td>" + dArray[i].Arabic + "</td>"
+         + "<td>" + dArray[i].English + "</td>"
+         + "<td>" + dArray[i].Math + "</td>";
+      }
+      tab.innerHTML += "</tr>";
+   }
+
+</script>
